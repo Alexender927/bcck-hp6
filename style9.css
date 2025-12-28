@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+}
+nav {
+    background: #000;
+    padding: 15px 60px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00d4ff;
+}
+.header {
+    background: linear-gradient(90deg, #0d6efd, #00d4ff);
+    padding: 50px 60px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.review-box {
+    width: 420px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.95);
+    color: #000;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.review-box label {
+    font-weight: 600;
+}
+
+.review-box input,
+.review-box textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.review-box input:focus,
+.review-box textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 10px rgba(13,110,253,0.4);
+}
+
+.stars {
+    display: flex;
+    gap: 6px;
+}
+
+.stars span {
+    font-size: 28px;
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.2s;
+}
+
+.stars span.active,
+.stars span:hover {
+    color: gold;
+    transform: scale(1.2);
+}
+.review-box button {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(90deg, #0d6efd, #00d4ff);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-box button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+.title {
+    width: 420px;
+    margin: 30px auto 15px;
+    font-size: 26px;
+    text-shadow: 0 0 12px rgba(0,212,255,0.7);
+}
+
+
+.review-item {
+    width: 420px;
+    margin: 10px auto;
+    background: rgba(255,255,255,0.95);
+    color: #000;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-left: 5px solid #0d6efd;
+}
+
+.review-item b {
+    font-size: 15px;
+}

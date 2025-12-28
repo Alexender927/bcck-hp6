@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="INDEX4.HTML">Trang chủ</a></li>
+            <li><a href="best.html">Đăng nhập</a></li>
+            <li><a href="best.html">Đăng ký</a></li>
+            <li><a href="product.html">Sản phẩm</a></li>
+            <li><a href="mail.html">Giỏ hàng</a></li>
+            <li><a href="thegood.html">Đánh giá</a></li>
+            <li><a href="themavel.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <meta charset="UTF-8">
+    <title>Đánh giá sản phẩm | CTU STORE</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Đánh giá sản phẩm</h1>
+    <p>Hãy chia sẻ trải nghiệm của bạn</p>
+</header>
+
+<div class="review-box">
+    <label>Họ tên</label>
+    <input type="text" id="name" placeholder="Nhập tên của bạn">
+
+    <label>Đánh giá</label>
+    <div class="stars">
+        <span onclick="chonSao(1)">★</span>
+        <span onclick="chonSao(2)">★</span>
+        <span onclick="chonSao(3)">★</span>
+        <span onclick="chonSao(4)">★</span>
+        <span onclick="chonSao(5)">★</span>
+    </div>
+
+    <label>Nội dung đánh giá</label>
+    <textarea id="comment" placeholder="Nhận xét về sản phẩm..."></textarea>
+
+    <button onclick="guiDanhGia()">Gửi đánh giá</button>
+</div>
+
+<h2 class="title">Đánh giá của khách hàng</h2>
+<div id="review-list"></div>
+
+<script src="danhgia.js"></script>
+</body>
+</html>
